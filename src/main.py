@@ -20,7 +20,7 @@ except ImportError:
 
 def main():
         ssl_context = SSLContext(PROTOCOL_TLSv1_2)
-        cert_path = os.path.join(os.path.dirname(__file__), './sf-class2-root.crt')
+        cert_path = os.path.join(os.path.dirname(__file__), 'resources/sf-class2-root.crt')
         ssl_context.load_verify_locations(cert_path)
         ssl_context.verify_mode = CERT_REQUIRED
         
